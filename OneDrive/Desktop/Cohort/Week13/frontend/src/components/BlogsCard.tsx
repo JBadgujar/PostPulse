@@ -45,13 +45,13 @@ export const BlogsCard = ({
     </Link>
 }
 
-function Circle(){
+export function Circle(){
     return <div className="w-1 h-1 rounded-full bg-slate-400">
     </div>
 }
 
 export function Avatar({authorName,size}:{authorName:string,size:string}){
-    return <div className={`relative inline-flex items-center justify-center w-${size=="big"?10:5} h-${size=="big"?10:5} overflow-hidden bg-gray-300 rounded-full dark:bg-gray-600`}>
+    return <div className={`relative inline-flex items-center justify-center w-8 h-${size=="big"?10:5} overflow-hidden bg-gray-300 rounded-full dark:bg-gray-600`}>
         <span className="font-sm text-gray-800 dark:text-gray-300">{authorName[0].toUpperCase()}</span>
     </div>
     
